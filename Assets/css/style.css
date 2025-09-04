@@ -20,7 +20,20 @@
 /*header*/
 
 header {
-    background-color:lightcoral;
+    background-color:#ffffff;
+    /*padding to the left and to the right*/
+    padding:0 1rem;
+    /* position to scroll along */
+    position:fixed;
+    /* I'll use 99 to make sure it's layered on top of any other elements
+     that might have a z-index later. */
+    z-index: 99;
+    width:100%;
+    /* the second value is the vertical offset negative will put the shadow below
+     positve the shadow will be above
+     The third value will add here, sets the blur, which is essentially how
+     soft or hard the shadow will look.  */
+    box-shadow : 1 2px 2px #3a3a3a;
 }
 
 h1 {
