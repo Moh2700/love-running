@@ -142,13 +142,24 @@ nav {
 
 main {
     background-color:lightblue;
-     /* Make  main element take up any surplus space  to push footer down */
+     /* Make main element take up any surplus space  to push footer down */
     flex: 1 0 auto;
     margin-top: 47px;
 }
 
 /*footer*/
 
-footer {
-    background-color:orange ;
+#social-networks {
+   text-align: center;
+   padding: 20px 0;
+   display:flex;
+   justify-content: space-evenly;
+   /* remove the bullet in list next to the icons */ 
+   list-style-type: none;
+}
+
+#social-networks i {
+   font-size: 160%;
+   padding: 5%;
+   color:#3a3a3a;
 }
