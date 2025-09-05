@@ -94,6 +94,32 @@ nav {
     font-size: 2rem;
 }
 
+@media screen and (min-width:750px)
+{
+    nav {
+        display:block;
+        position:relative;
+        box-shadow:none;
+        width:fit-content;
+        padding-right: 1rem;
+    }
+
+    #menu {
+       display:flex;
+
+    }
+    #menu > li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+      display: none;  
+    }
+}
+
+
+
+
 /*main content*/
 
 main {
