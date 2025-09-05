@@ -33,12 +33,67 @@ header {
      positve the shadow will be above
      The third value will add here, sets the blur, which is essentially how
      soft or hard the shadow will look.  */
-    box-shadow : 1 2px 2px #3a3a3a;
+    box-shadow : 0 2px 2px #3a3a3a;
+    /* for display the icon the same line as the logo */
+    display:flex;
+    justify-content: space-between;
+    align-items: baseline;
+
 }
 
+header a {
+    text-decoration:none ;
+    /*this will inherit from body*/
+    color:inherit ;
+}
 h1 {
    font-family: 'Oswald', sans-serif; 
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   color: #252525;
 }
+
+#menu {
+   font-size: 110%;
+   letter-spacing: 4px;
+   list-style-type: none; 
+}
+
+#menu li{
+   margin-bottom: 1em;
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a ;
+}
+
+/* Navbar styles with dropdown ntoggle  */
+nav {
+    position:absolute;
+    background-color: #ffffff;
+    width:100%;
+    left:0;
+    padding : 0 1rem;
+    box-shadow : 0 2px 2px #3a3a3a;
+    display:none;
+    top:100%;
+
+}
+
+/* nav toggle */
+#nav-toggle:checked~nav {
+    display:block ;
+}
+
+#nav-toggle {
+    display:none;
+}
+
+.nav-toggle-label {
+    
+    font-size: 2rem;
+}
+
 /*main content*/
 
 main {
